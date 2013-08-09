@@ -2,3 +2,4 @@ mytestmod
 =========
 .
 ..
+test
