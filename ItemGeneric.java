@@ -6,10 +6,10 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class ItemOreNugget  extends Item
+public class ItemGeneric  extends Item
 {
 
-	public ItemOreNugget(int id) 
+	public ItemGeneric(int id) 
 	{
 		super(id);
 		this.setCreativeTab(CreativeTabs.tabMaterials);
