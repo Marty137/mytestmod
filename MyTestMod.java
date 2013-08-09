@@ -20,7 +20,7 @@ public class MyTestMod
 	public static Block modStone;
 
 	public static Item oreNugget;
-
+	public static Item washedNugget;
 
 	@EventHandler
 	public void load(FMLInitializationEvent event)
@@ -36,8 +36,10 @@ public class MyTestMod
 		LanguageRegistry.addName(modStone, "Stone");
 
 		oreNugget = new ItemOreNugget(5000).setUnlocalizedName("oreNugget");
-
+		washedNugget = new ItemWashedNugget(5001).setUnlocalizedName("washedNugget");
+		
 		LanguageRegistry.addName(oreNugget, "Ore Nugget");
+		LanguageRegistry.addName(washedNugget, "Washed Nugget");
 	}
 
 
