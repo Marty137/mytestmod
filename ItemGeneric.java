@@ -18,7 +18,7 @@ public class ItemGeneric  extends Item
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister par1IconRegister)
 	{
-		this.itemIcon = par1IconRegister.registerIcon(MyTestMod.modid + ":" + this.getUnlocalizedName());
+		this.itemIcon = par1IconRegister.registerIcon(MyTestMod.modid + ":" + (this.getUnlocalizedName().substring(5)));
 	}
 
 }

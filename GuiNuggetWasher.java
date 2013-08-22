@@ -13,7 +13,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class GuiNuggetWasher extends GuiContainer
 {
-    private static final ResourceLocation field_110410_t = new ResourceLocation("textures/gui/container/furnace.png");
+    private static final ResourceLocation field_110410_t = new ResourceLocation("marty_mytestmod", "textures/gui/nuggetwasher.png");
     private TileEntityNuggetWasher furnaceInventory;
 
     public GuiNuggetWasher(InventoryPlayer par1InventoryPlayer, TileEntityNuggetWasher par2TileEntityFurnace)

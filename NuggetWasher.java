@@ -38,9 +38,9 @@ public class NuggetWasher extends BlockContainer
      */
     private static boolean keepFurnaceInventory = true;
     @SideOnly(Side.CLIENT)
-    private Icon furnaceIconTop;
+    private Icon nuggetwasherTop;
     @SideOnly(Side.CLIENT)
-    private Icon furnaceIconFront;
+    private Icon nuggetwasherFront;
 
     protected NuggetWasher(int id, boolean par2)
     {
@@ -101,29 +101,28 @@ public class NuggetWasher extends BlockContainer
             par1World.setBlockMetadataWithNotify(par2, par3, par4, b0, 2);
         }
     }
-
-    @SideOnly(Side.CLIENT)
-
-    /**
-     * From the specified side and block metadata retrieves the blocks texture. Args: side, metadata
-     */
+   
+    
     public Icon getIcon(int par1, int par2)
     {
-        return par1 == 1 ? this.furnaceIconTop : (par1 == 0 ? this.furnaceIconTop : (par1 != par2 ? this.blockIcon : this.furnaceIconFront));
+        return par1 == 1 ? this.nuggetwasherTop : (par1 == 0 ? this.nuggetwasherTop : (par1 != par2 ? this.blockIcon : this.nuggetwasherFront));
     }
-
-    @SideOnly(Side.CLIENT)
-
-    /**
-     * When this method is called, your block should register all the icons it needs with the given IconRegister. This
-     * is the only chance you get to register icons.
-     */
+    
     public void registerIcons(IconRegister par1IconRegister)
     {
-        this.blockIcon = par1IconRegister.registerIcon("furnace_side");
-        this.furnaceIconFront = par1IconRegister.registerIcon(this.isActive ? "furnace_front_on" : "furnace_front_off");
-        this.furnaceIconTop = par1IconRegister.registerIcon("furnace_top");
+        this.blockIcon = par1IconRegister.registerIcon(MyTestMod.modid + ":" + "nuggetwasherside");
+        this.nuggetwasherFront = par1IconRegister.registerIcon(this.isActive ? (MyTestMod.modid + ":" + "nuggetwasheron") : (MyTestMod.modid + ":" + "nuggetwasheroff"));
+        this.nuggetwasherTop = par1IconRegister.registerIcon(MyTestMod.modid + ":" + "nuggetwashertop");
     }
+    
+    
+    
+    /**@SideOnly(Side.CLIENT)
+	
+	public void registerIcons(IconRegister par1IconRegister)
+	{
+	this.blockIcon = par1IconRegister.registerIcon(MyTestMod.modid + ":" + (this.getUnlocalizedName().substring(5)));
+	}
 
     /**
      * Called upon block activation (right click on the block.)

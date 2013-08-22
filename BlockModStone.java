@@ -33,6 +33,6 @@ public class BlockModStone extends Block
 	
 	public void registerIcons(IconRegister par1IconRegister)
 	{
-		this.blockIcon = par1IconRegister.registerIcon(MyTestMod.modid + ":" + this.getUnlocalizedName());
+	this.blockIcon = par1IconRegister.registerIcon(MyTestMod.modid + ":" + (this.getUnlocalizedName().substring(5)));
 	}
 }
