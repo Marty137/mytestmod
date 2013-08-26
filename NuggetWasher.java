@@ -53,7 +53,7 @@ public class NuggetWasher extends BlockContainer
      */
     public int idDropped(int par1, Random par2Random, int par3)
     {
-        return MyTestMod.nuggetWasherIdle.blockID;
+        return MyTestMod.nuggetWasherIdle.blockID ;
     }
 
     /**

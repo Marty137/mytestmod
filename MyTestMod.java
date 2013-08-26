@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -35,12 +36,13 @@ public class MyTestMod
 	public static Item oreNugget;
 	public static Item washedNugget;
 
-
+	
 	
 	@EventHandler
 	public void load(FMLInitializationEvent event)
 	{
 
+		
 		Block.blocksList[1] = null;
 		Block BlockTutorialBlock = modStone;
 
@@ -69,6 +71,8 @@ public class MyTestMod
 		
 		LanguageRegistry.addName(oreNugget, "Ore Nugget");
 		LanguageRegistry.addName(washedNugget, "Washed Nugget");
+		
+		ModRecipes.addRecipes();
 	}
 
 

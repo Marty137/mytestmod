@@ -26,6 +26,7 @@ public class BlockModStone extends Block
 		 {
 		 	par3 = 3;
 		 }
+		 // return par2Random.nextInt(10 - par3 * 3) == 0 ? MyTestMod.oreNugget.itemID : Block.cobblestone.blockID;
 		 return par2Random.nextInt(10 - par3 * 3) == 0 ? MyTestMod.oreNugget.itemID : Block.cobblestone.blockID;
 	}
 		
