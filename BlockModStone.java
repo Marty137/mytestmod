@@ -7,6 +7,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -27,7 +28,7 @@ public class BlockModStone extends Block
 		 	par3 = 3;
 		 }
 		 // return par2Random.nextInt(10 - par3 * 3) == 0 ? MyTestMod.oreNugget.itemID : Block.cobblestone.blockID;
-		 return par2Random.nextInt(10 - par3 * 3) == 0 ? MyTestMod.oreNugget.itemID : Block.cobblestone.blockID;
+		 return par2Random.nextInt(10 - par3 * 3) == 0 ? new ItemStack(MyTestMod.nugget, 1, 0).itemID : Block.cobblestone.blockID;
 	}
 		
 @SideOnly(Side.CLIENT)

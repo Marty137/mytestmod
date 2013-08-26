@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -28,7 +29,15 @@ public class RecipesNuggetWasher
 
     private RecipesNuggetWasher()
     {
-        this.addSmelting(MyTestMod.oreNugget.itemID, new ItemStack(MyTestMod.washedNugget), 0.7F);
+        this.addSmelting (MyTestMod.nugget.itemID, 0, new ItemStack(MyTestMod.nugget,1 , 6), 0.7F);
+        this.addSmelting (MyTestMod.nugget.itemID, 1, new ItemStack(MyTestMod.nugget,1 , 7), 0.7F);
+        this.addSmelting (MyTestMod.nugget.itemID, 2, new ItemStack(MyTestMod.nugget,1 , 8), 0.7F);
+        this.addSmelting (MyTestMod.nugget.itemID, 3, new ItemStack(Item.goldNugget), 0.7F);
+        this.addSmelting (MyTestMod.nugget.itemID, 4, new ItemStack(MyTestMod.nugget,1 , 9), 0.7F);
+        this.addSmelting (MyTestMod.nugget.itemID, 5, new ItemStack(MyTestMod.nugget,1 , 10), 0.7F);
+        
+        
+        
         
     }
 
