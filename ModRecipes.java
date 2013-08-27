@@ -12,42 +12,57 @@ public class ModRecipes
 	{
 
 		
-//Nugget Washer
+		//Nugget Washer
 		GameRegistry.addRecipe(new ItemStack(MyTestMod.nuggetWasherIdle), new Object[]{
 			"XYX",
 			"YBY",
 			"XXX",
 			'X', MyTestMod.modStone, 'Y', Block.fenceIron , 'B', Item.cauldron});
-//Copper Ingot
+		//Copper Ingot
 		GameRegistry.addRecipe(new ItemStack(MyTestMod.ingot, 1, 0), new Object[]{
 			"CCC",
 			"CCC",
 			"CCC",
 		    'C', new ItemStack(MyTestMod.nugget, 1, 6)});
-//Tin Ingot
+		//Copper Nuggets
+		GameRegistry.addShapelessRecipe(new ItemStack(MyTestMod.nugget, 9, 6), new Object[]{
+			new ItemStack(MyTestMod.ingot, 1, 0)});
+		//Tin Ingot
 		GameRegistry.addRecipe(new ItemStack(MyTestMod.ingot, 1, 1), new Object[]{
 			"TTT",
 			"TTT",
 			"TTT",
 			'T', new ItemStack(MyTestMod.nugget, 1, 7)});
-//Iron Ingot		
+		//Tin Nuggets
+				GameRegistry.addShapelessRecipe(new ItemStack(MyTestMod.nugget, 9, 7), new Object[]{
+					new ItemStack(MyTestMod.ingot, 1, 1)});
+		//Iron Ingot		
 		GameRegistry.addRecipe(new ItemStack(Item.ingotIron), new Object[]{
 			"III",
 			"III",
 			"III",
 			'I', new ItemStack(MyTestMod.nugget, 1, 8)});
-//Silver		
+		//Iron Nuggets
+				GameRegistry.addShapelessRecipe(new ItemStack(MyTestMod.nugget, 9, 8), new Object[]{
+					new ItemStack(Item.ingotIron)});
+		//Silver		
 		GameRegistry.addRecipe(new ItemStack(MyTestMod.ingot, 1, 2), new Object[]{
 			"SSS",
 			"SSS",
 			"SSS",
 			'S', new ItemStack(MyTestMod.nugget, 1, 9)});
-//Lead		
+		//Silver Nuggets
+				GameRegistry.addShapelessRecipe(new ItemStack(MyTestMod.nugget, 9, 9), new Object[]{
+					new ItemStack(MyTestMod.ingot, 1, 2)});
+		//Lead		
 		GameRegistry.addRecipe(new ItemStack(MyTestMod.ingot, 1, 3), new Object[]{
 			"LLL",
 			"LLL",
 			"LLL",
 			'L', new ItemStack(MyTestMod.nugget, 1, 10)});	
+		//Lead Nuggets
+				GameRegistry.addShapelessRecipe(new ItemStack(MyTestMod.nugget, 9, 10), new Object[]{
+					new ItemStack(MyTestMod.ingot, 1, 3)});
 	
 	
 	
